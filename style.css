@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100dvh;
+    
+    background-color: black;
+    color: white;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    
+    gap: 10px;
+    
+    font-family: 'Space Mono', 'Space Grotesk', monospace;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    gap: 30px;
+    
+    h1 {
+        font-size: 29px;
+        
+        position: relative;
+        top: -200px;
+        
+        .grausC {
+            color: #AAE9FF;
+        }
+        
+        .grausF {
+            color: #FFB5B5;
+        }
+    }
+    
+    .inputs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+        
+        input {
+            padding: 5px 10px;
+            
+            outline: none;
+            
+            background: transparent;
+            border: none;
+            border-bottom: 3px solid #8AF5FF;
+            
+            color: #fff;
+        }
+        
+        .res {
+            border: 3px solid #8AF5FF48;
+            border-radius: 2rem;
+            width: 250px;
+            text-align: center;
+        }
+    }
+    
+    button {
+        padding: 9px 20px;
+        
+        background: linear-gradient(120deg, #5E8687, #5E5F87);
+        
+        border: none;
+        border-radius: 1rem;
+        
+        color: #fff;
+        
+        font-family: monospace;
+        
+        box-shadow: 0 0 10px 0 #00FFFF;
+        
+        transition: 0.3s ease;
+    }
+    
+    button:hover {
+        box-shadow: 0 0 8px 3px #00FFFF;
+    }
+}
+
